@@ -81,9 +81,9 @@ const Xylophone = ({word, changeWord}) => {
 
     return(
         <>
-            <button className="xyloTile" onClick={handleClickLow}></button>
-            <button className="xyloTile" onClick={handleClickMid}></button>
-            <button className="xyloTile" onClick={handleClickHigh}></button>
+            <button className="xyloTileLow" onClick={handleClickLow}></button>
+            <button className="xyloTileMid" onClick={handleClickMid}></button>
+            <button className="xyloTileHigh" onClick={handleClickHigh}></button>
         </>
     )
 };

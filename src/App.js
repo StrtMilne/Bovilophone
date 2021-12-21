@@ -4,7 +4,9 @@ import "./static/style.css"
 
 function App() {
   return (
-    <MainPage className="main-container"/>
+    <div className="outer">
+      <MainPage className="main-container"/>
+    </div>
   );
 }
 
