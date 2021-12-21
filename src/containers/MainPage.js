@@ -11,7 +11,7 @@ const MainPage = function () {
     }
 
     return(
-        <div className="xylo main-container">
+        <div className="xylo">
             <Xylophone word={word} changeWord={changeWord}/>
         </div>
     )

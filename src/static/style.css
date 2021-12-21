@@ -1,7 +1,7 @@
 .outer {
     background-color: #e8df9e;
     margin: 0;
-    padding: 0;
+    border: 0;
 }
 
 .xyloTileLow {
@@ -30,8 +30,8 @@
 }
 
 .xylo {
-    padding: 100px;
-    margin: 100px;
+    padding: 20vh;
+    margin: 0 100px;
     display: flex;
     justify-content: center;
     background-color: #e8df9e;
