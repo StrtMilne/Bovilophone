@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import NavBar from "../components/NavBar";
 import Xylophone from "../components/Xylophone";
 import "../static/style.css"
 
@@ -11,9 +12,11 @@ const MainPage = function () {
     }
 
     return(
-        <div className="xylo">
-            <Xylophone word={word} changeWord={changeWord}/>
-        </div>
+        <>
+            <div className="xylo">
+                <Xylophone word={word} changeWord={changeWord}/>
+            </div>
+        </>
     )
 }
 
