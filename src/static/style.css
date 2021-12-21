@@ -1,0 +1,10 @@
+.xyloTile {
+    width: 10vw;
+    height: 60vh;
+}
+
+.xylo {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
