@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 import "../static/style.css"
+import PopUp from "../components/PopUp";
 
 const Quiz = function () {
 
     const [answer, setAnswer] = useState("")
+
 
     const handleSelectTwo = () => {
         setAnswer("Two");
@@ -19,6 +21,10 @@ const Quiz = function () {
 
     const handleSelectFive = () => {
         setAnswer("Five");
+    }
+
+    const resetAnswer = () => {
+        setAnswer("");
     }
 
     return(
@@ -38,6 +44,9 @@ const Quiz = function () {
                 <label for="Five">Five</label>
                 {answer === "Five" ? <p>!!  Warning  !!</p> : null}
             </form>
+            {answer==="Five" ? 
+            <div className="popup"><PopUp resetAnswer={resetAnswer}/></div>: 
+            null}
         </>
     )
 };
