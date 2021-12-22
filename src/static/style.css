@@ -125,3 +125,8 @@ form p {
         background-color: rgba(151, 68, 0, 0.76);
     }
 }
+
+.quiz {
+    width: 100vw;
+    height: 100vh;
+}

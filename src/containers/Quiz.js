@@ -1,11 +1,13 @@
 import React, {useState} from "react";
 import "../static/style.css"
 import PopUp from "../components/PopUp";
+import useSound from "use-sound";
+import moo from "../assets/mucca1.wav"
 
 const Quiz = function () {
 
     const [answer, setAnswer] = useState("")
-
+    const [PlayMoo] = useSound(moo);
 
     const handleSelectTwo = () => {
         setAnswer("Two");
@@ -21,6 +23,7 @@ const Quiz = function () {
 
     const handleSelectFive = () => {
         setAnswer("Five");
+        PlayMoo();
     }
 
     const resetAnswer = () => {
@@ -28,7 +31,7 @@ const Quiz = function () {
     }
 
     return(
-        <>
+        <div className="quiz">
             <h2>How many meats are there?</h2>
             <form>
                 <input type="radio" name="answer" onClick={handleSelectTwo}/>
@@ -47,7 +50,7 @@ const Quiz = function () {
             {answer==="Five" ? 
             <div className="popup"><PopUp resetAnswer={resetAnswer}/></div>: 
             null}
-        </>
+        </div>
     )
 };
 
