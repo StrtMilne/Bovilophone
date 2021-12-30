@@ -32,7 +32,7 @@ const Quiz = function () {
 
     return(
         <div className="quiz">
-            <h2>How many meats are there?</h2>
+            <h2 className="question">How many meats are there?</h2>
             <form>
                 <input type="radio" name="answer" onClick={handleSelectTwo}/>
                 <label for="Two">Two</label>

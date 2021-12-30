@@ -13,9 +13,9 @@ const NavBar = function () {
                 <NavLink to="/quiz">
                     <button className="nav-element">Quiz</button>
                 </NavLink>
-                <NavLink to="/cuts">
+                {/* <NavLink to="/cuts">
                     <button className="nav-element">Post-trout</button>
-                </NavLink>
+                </NavLink> */}
             </li>
         </ul>
     )
