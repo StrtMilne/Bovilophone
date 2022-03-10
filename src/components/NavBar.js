@@ -6,12 +6,12 @@ const NavBar = function () {
         <ul>
             <li>
                 <NavLink to="/">
-                    <button className="nav-element">Home</button>
+                    <button className="nav-element">Xylophone</button>
                 </NavLink>
             </li>
             <li>
                 <NavLink to="/quiz">
-                    <button className="nav-element">Quiz</button>
+                    <button className="nav-element">Slash beef?</button>
                 </NavLink>
                 {/* <NavLink to="/cuts">
                     <button className="nav-element">Post-trout</button>
